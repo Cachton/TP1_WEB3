@@ -7,21 +7,42 @@
     <title>Document</title>
     <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="./node_modules/bootstrap-icons/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./src/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tilt+Warp&display=swap" rel="stylesheet">
 </head>
 
 <body class="text-white">
-    <header class="bg-dark p-3 ">
-        <h1>Shows and tell</h1>
+    <header class="bg-dark p-3 row">
+        <h1 class=col-3>Shows and tell</h1>
+        <button type="button" class="col-4 offset-4"> <a href="https://cachton.github.io/" target="_blank">Autres
+                critiques</a></button>
     </header>
 
-    <main class="bg-secondary">
+    <main class="bg-secondary col-11 mx-auto mb-3">
 
-        <div class="container pt-4">
+        <div class="container pt-3 mb-3 border-bottom">
             <h3 class="text-uppercase">quannnic et kmoe à montreal</h3>
             <p>15 septembre 2025</p>
         </div>
 
         <div class="container">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eu feugiat ex. Vivamus a nisl eget elit
+                malesuada condimentum in id nisl. Maecenas aliquet vehicula purus ut euismod. Nullam viverra eget ipsum
+                sed commodo. Aliquam ut volutpat eros. Nam eu libero eget dolor ullamcorper lobortis. Etiam bibendum,
+                tellus vel sollicitudin fringilla, felis erat maximus urna.</p>
+
+            <p>Mauris commodo pellentesque justo sed imperdiet. Cras augue erat, porta in massa id, hendrerit euismod
+                massa. Fusce eget neque ut nulla molestie dignissim. Vestibulum consectetur magna id nunc volutpat
+                varius eu ac diam. Nulla efficitur lectus ac nisi commodo consectetur.</p>
+
+            <p>Nullam varius vitae lectus placerat porta. Aenean ultricies, felis vitae ultricies venenatis, erat nunc
+                vulputate orci, at iaculis sem leo sed felis. Integer iaculis erat ut elit consectetur tincidunt. Morbi
+                quis tellus vitae libero ornare auctor eget eu purus. Quisque pharetra finibus suscipit.</p>
+        </div>
+
+        <div class="container mx-auto">
             <blockquote class="instagram-media" data-instgrm-captioned
                 data-instgrm-permalink="https://www.instagram.com/p/DO6Ksi0gFKc/?utm_source=ig_embed&amp;utm_campaign=loading"
                 data-instgrm-version="14"
@@ -116,8 +137,87 @@
             <script async src="//www.instagram.com/embed.js"></script>
         </div>
 
+        <card class="card row col-10 mx-auto pt-3 mb-3">
+            <img src="./assets/img/Quannnic_image.png" class="rounded">
+            <div class="card-body">
+                <h4 class="card-title">Quannnic <a
+                        href="https://open.spotify.com/artist/6X9yxRiccMK40GHKfUFZEu?si=1e8kjyFPQdWad3n8F8VHaQ"
+                        target="_blanka"><i class="bi bi-spotify"></i></a>
+                    <a href="https://music.apple.com/us/artist/quannnic/1544068874" target="_blank"><i
+                            class="bi bi-apple-music"></i></a>
+                </h4>
+
+                <p class="card-text">Nick Quan, de son nom d'artiste Quannnic, est un artiste américain. Il a commencé
+                    avec un son digicore mais a changé de direction avec son album kenopsia en 2022.</p>
+            </div>
+        </card>
+
+        <card class="card row col-10 mx-auto pt-3 mb-2">
+            <img src="./assets/img/kmoe_image.jpg" class="rounded">
+            <div class="card-body">
+                <h4 class="card-title">Kmoe <a
+                        href="https://open.spotify.com/artist/48wt14F9gzlkNDRdXyJTQz?si=XbiMomi4RBSSvvpxm94dCg"
+                        target="_blank"><i class="bi bi-spotify"></i></a>
+                    <a href="https://music.apple.com/us/artist/kmoe/1274240597" target="_blank"><i
+                            class="bi bi-apple-music"></i></a>
+                </h4>
+                <p class="card-text">Kale Itkonen né le 22 juin 2004, de son nom d'artiste kmoe est un artiste de
+                    Vancouver. Il produit du EDM depuis l'age de neuf ans.</p>
+            </div>
+        </card>
+
+        <div>
+            <!-- section avec la note-->
+            <div class="text-center py-5 border-top border-secondary">
+                <h2 class="fw-bold mb-3">Concerts à ne pas manquer</h2>
+                <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#noteModal">
+                    Afficher
+                </button>
+            </div>
+
+            <!-- modal -->
+            <div class="modal fade" id="noteModal" tabindex="-1" aria-labelledby="noteModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content bg-dark text-white border-secondary">
+                        <div class="modal-header border-secondary">
+                            <h5 class="modal-title" id="noteModalLabel">À partir du 2025-10-01</h5>
+                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                                aria-label="Fermer"></button>
+                        </div>
+                        <div class="modal-body text-center">
+                            <div class="display-4 text-primary fw-bold"></div>
+                            <ul style="list-style-type: none;">
+                                <li>
+                                    <b>Ce soir! - Ninajirachi - Newspeak</b>
+                                </li>
+                                <li>
+                                    <p class="mt-3">2025-10-05 - 2Hollis - Mtelus</p>
+                                </li>
+                                <li>
+                                    <p class="mt-3">2025-10-11 - Bladee - Mtelus</p>
+                                </li>
+                                <li>
+                                    <p class="mt-3">2025-10-12 - Aminé - Mtelus</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="modal-footer border-secondary justify-content-center">
+                            <button type="button" class="btn btn-outline-light"
+                                data-bs-dismiss="modal">Confirmer</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
     </main>
 
+    <footer class="bg-dark p-3 row">
+        <h1 class=col-3>Shows and tell</h1>
+        <button type="button" class="col-4 offset-4"> <a href="https://cachton.github.io/" target="_blank">Autres
+                critiques</a></button>
+    </footer>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
